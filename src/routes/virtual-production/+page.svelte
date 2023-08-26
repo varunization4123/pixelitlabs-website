@@ -143,7 +143,7 @@
     <div class="line"></div>
 </section>
 
-<style>
+<style lang="scss">
     .hero, .about{
         min-height: 92vh;
         height: auto;

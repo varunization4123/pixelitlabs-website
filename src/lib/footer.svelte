@@ -16,7 +16,7 @@
     <p>© Copyright Pixelit Labs 2023</p>
 </div>
 
-<style>
+<style lang="scss">
     .hyperlinks{
         display: grid;
         margin: 5% 10%;

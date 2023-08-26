@@ -14,9 +14,10 @@
     <Footer />
 </footer>
 
-<style>
+<style lang="scss">
     header{
         position: fixed;
+        z-index: 5;
     }
     footer{
         text-align: center;

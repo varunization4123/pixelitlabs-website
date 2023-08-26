@@ -43,7 +43,7 @@
     </div>
 </section>
 
-<style>
+<style lang="scss">
     .hero{
         min-height: 92vh;
         height: auto;
