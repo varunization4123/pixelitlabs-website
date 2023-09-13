@@ -11,6 +11,11 @@
         <li><a href="/indoor-led">Indoor LED Display</a></li>
         <li><a href="/virtual-production/what-is-virtual-production">LED Wall</a></li>
     </ul>
+    <ul>
+        <li><a href="tel:+917338550011">+91 7338550011</a></li>
+        <li><a href="mailto:varun@virtualproductionindia.com">varun@virtualproductionindia.com</a></li>
+        <li><a href="/virtual-production/what-is-virtual-production">LED Wall</a></li>
+    </ul>
 </div>
 <div class="footer">
     <p>© Copyright Pixelit Labs 2023</p>
@@ -20,7 +25,7 @@
     .hyperlinks{
         display: grid;
         margin: 5% 10%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: left;
     }
     .hyperlinks img{
@@ -37,12 +42,17 @@
     }
     @media(max-width: 480px){
         .hyperlinks{
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             justify-items: center;
+            margin: 0%;
         }
         .hyperlinks img{
             height: 30px;
         }
+        ul{
+        text-align: center;
+        list-style-type: none;
+    }
         li{
             font-size: 12px;
         }

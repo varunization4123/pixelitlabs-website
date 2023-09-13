@@ -9,6 +9,12 @@ export default {
   }),
     kit: {
         // default options are shown
+        files: {
+            assets: 'static',
+            routes: 'src/routes',
+            // Add the 'public' option to serve files from the 'public' folder
+            public: 'public',
+        },
         adapter: adapter({
             // if true, will create a Netlify Edge Function rather
             // than using standard Node-based functions

@@ -17,7 +17,7 @@
 </style> -->
 
 <svelte:head>
-    <title>Pixelit Labs | LED Display Screen India</title>
+    <title>Pixelit Labs - LED Display Screens | Advertising LEDs | Brands</title>
 </svelte:head>
 
 <script>
@@ -84,11 +84,11 @@
             {#if intersectOnce}
             <div transition:fade={{delay: 300, duration: 500}}>
               <div class="horizontal-scroll">
-                <div class="led-card"><img class="card-img" src="/As-seen-on-Mandalorian.png" alt=""><h5>P1 LED Panel</h5></div>
-                <div class="led-card"><img class="card-img" src="/As-seen-on-Mandalorian.png" alt=""><h5>P1 LED Panel</h5></div>
-                <div class="led-card"><img class="card-img" src="/As-seen-on-Mandalorian.png" alt=""><h5>P1 LED Panel</h5></div>
-                <div class="led-card"><img class="card-img" src="/As-seen-on-Mandalorian.png" alt=""><h5>P1 LED Panel</h5></div>
-                <div class="led-card"><img class="card-img" src="/As-seen-on-Mandalorian.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 1.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 2.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 3.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 4.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 5.png" alt=""><h5>P1 LED Panel</h5></div>
               </div>  
             </div>
             {/if}
@@ -97,29 +97,37 @@
 </section>
 <section class="clients">
     <div class="clientsImg">
-        <img class="Aevy" src="/As-seen-on-Aevy.png" alt="">
-        <img class="Mandalorian" src="/As-seen-on-Mandalorian.png" alt="">
-        <img class="PatriotAct" src="/As-seen-on-Patriot-Act.png" alt="">
-        <img class="TechBurner" src="/As-seen-on-Tech-Burner.png" alt="">
-        <img class="DineshGodara" src="/As-seen-on-Dinesh-Godara.png" alt="">
-        <img class="Puma" src="/As-seen-on-Puma.png" alt="">
+        <img src="/Logo1.png" alt="">
+        <img src="/Logo2.png" alt="">
+        <img src="/Logo3.png" alt="">
+        <img src="/Logo4.png" alt="">
+        <img src="/Logo5.png" alt="">
+        <img src="/Logo6.png" alt="">
+        <img src="/Logo7.png" alt="">
+        <img src="/Logo8.png" alt="">
+        <img src="/Logo9.png" alt="">
+        <!-- <img src="/Logo10.png" alt=""> -->
     </div>
-    <h5>As seen on 'Aevy TV', 'The Mandalorian', 'Patriot Act', 'Dinesh Godara - Nolo' and 'Tech Burner'.</h5>
+    <h5>Brands who trust us.</h5>
 </section>
 <section class="details">
-    <div class="screens">
-        <div class="detail">
-            <h4>Screens made for Virtual Production</h4>
-            <p>It's important to provide a very high refresh rate, especially for virtual production or other situations where the screen is recorded on video by professional digital cameras</p>
+    <div class="previousWork">
+        <h5>Our recent works.</h5>
+        <IntersectionObserver once element={elementOnce} bind:intersecting={intersectOnce}>
+        <div bind:this={elementOnce}>
+            {#if intersectOnce}
+            <div transition:fade={{delay: 300, duration: 500}}>
+              <div class="horizontal-scroll">
+                <div class="led-card"><img class="card-img" src="/product 1.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 2.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 3.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 4.png" alt=""><h5>P1 LED Panel</h5></div>
+                <div class="led-card"><img class="card-img" src="/product 5.png" alt=""><h5>P1 LED Panel</h5></div>
+              </div>  
+            </div>
+            {/if}
         </div>
-        <img class="detailImage" src="Comparision-main-shadow-p-1080.png" alt="">
-    </div>
-    <div class="screens">
-        <img class="detailImage" src="Virtual-production-wireframe-p-1080.png" alt="">
-        <div class="detail">
-            <h4>Adaptable LED Volumes for beautiful lighting</h4>
-            <p>The benefits of LED Volume studio include beautiful, quality footage that can be used to create a variety of media projects, Flexibility over other types of lighting [it creates a more natural & better lighting quality over any softbox]</p>
-        </div>   
+    </IntersectionObserver>
     </div>
 </section>
 <section class="info">
@@ -190,6 +198,7 @@
         background-color: #fff;
         height: auto;
         align-items: center;
+        text-align: center;
     }
     .contact{
         height: auto;
@@ -277,6 +286,7 @@
         margin-top: 25px;
         height: 25vh;
       width: 25vh;
+      border-radius: 20px;
     }
     .horizontal-scroll::-webkit-scrollbar {
       display: none;
@@ -286,17 +296,20 @@
         text-align: center;
         font-size: 30px;
         line-height: 30px;
+        margin-top: 0%;
+        padding-top: 5%;
     }
     .clientsImg{
         display: grid;
         justify-content: space-around;
-        padding: 2%;
-        grid-template-columns: repeat(6, 1fr);
+        padding: 1%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
     }
-    .Aevy, .Mandalorian, .PatriotAct, .DineshGodara, .TechBurner, .Puma {
-        max-height: 180px
+    .clientsImg img {
+        max-height: 200px
     }
     h4{
         font-size: 36px;

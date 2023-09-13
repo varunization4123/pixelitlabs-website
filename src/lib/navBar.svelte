@@ -9,6 +9,6 @@
     img{
         width: 96px;
         background-blend-mode: saturation;
-        filter: invert(100%);
+        // filter: invert(100%);
     }
 </style>
